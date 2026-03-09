@@ -34,15 +34,6 @@ class Karakter{
     string getName(){
         return name;
     }
-    char getTier(){
-        return tier;
-    }
-    int getHp(){
-        return hp;
-    }
-    int getAttackPower(){
-        return attackPower;
-    }
 
     virtual void displayInfo(){
         cout << "Nama Karakter: " << name << endl << "Tier : " << tier << endl << "HP : " << hp << endl << "Attack Power : " << attackPower << endl;
