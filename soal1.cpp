@@ -16,21 +16,16 @@ class Karakter{
             attackPower = attackPowerKarakter;
         }
     
-    // setter
-    void setName(string namaKarakter){
-        name = namaKarakter;
+    // setter menaikkan tier
+    void promoteTier(){
+        if (tier > 'A'){
+            tier = tier - 1;
+        }
+        else{
+            cout << "TIER SUDAH MENTOK";
+        }
     }
-    void setTier(char tierKarakter){
-        tier = tierKarakter;
-    }
-    void setHp(int hpKarakter){
-        hp = hpKarakter;
-    }
-    void setAttackPower(int AttackPowerKarakter){
-        attackPower = AttackPowerKarakter;
-    }
-
-    // getter
+    // getter 
     string getName(){
         return name;
     }
